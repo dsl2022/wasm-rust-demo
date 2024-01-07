@@ -1,0 +1,20 @@
+
+/target/
+pkg
+# Remove Cargo.lock from gitignore if creating an executable, keep it for libraries
+# Cargo.lock
+
+# Generated files
+**/*.rs.bk
+
+# Editor and IDE files
+**/.vscode/
+**/*.swp
+**/*.swo
+**/*~
+.idea/
+*.iml
+.DS_Store
+
+# Environment variables
+.env

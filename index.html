@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rust and WebAssembly</title>
+    <script type="module">
+        import init, { fac } from './pkg/rust_wasm_demo.js';
+        async function run() {
+            await init();
+            for (let i = 1; i <= 15; i++) {
+                console.log(`fac(${i}) = ${fac(i)}`);
+            }
+        }
+
+        run();
+    </script>
+</head>
+<body>
+    <h1>Rust, WebAssembly, and JavaScript Demo</h1>
+    <p>Check the console for output.</p>
+</body>
+</html>
